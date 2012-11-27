@@ -1,7 +1,7 @@
 // your app here
 define(
-  [ /* deps */ ],
-  function() {
-    console.log('hello world');
+  [ 'views/main' ],
+  function(MainView) {
+    new MainView().render().appendTo('body');
   }
 );

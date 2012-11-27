@@ -14,8 +14,11 @@ require.config({
   },
   shim: {
     backbone: {
-      deps    : [ 'lodash', 'jquery', 'super' ],
+      deps    : [ 'lodash', 'jquery' ],
       exports : 'Backbone'
+    },
+    'super' : {
+      deps    : [ 'backbone' ]
     }
   }
 });
