@@ -1,5 +1,8 @@
 // configure require.js
 require.config({
+  // remove in production!
+  urlArgs : "ts=" +  (new Date()).getTime(),
+
   // initialize the application with the main application file
   deps    : [ 'main' ],
   paths   : {

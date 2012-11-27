@@ -2,7 +2,6 @@ define(
   [ 'backbone', 'views/subview' ],
   function(Backbone, SubView) {
     return Backbone.View.extend({
-      id          : 'main-view',
       template    : _.template( $("#main-view-template").text() ),
       initialize  : function() {
         this.subview = new SubView();
